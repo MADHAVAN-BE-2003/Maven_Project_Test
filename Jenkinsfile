@@ -26,7 +26,7 @@ pipeline {
                     checkout([
                         $class: 'GitSCM', 
                         branches: [[name: '*/main']],
-                        userRemoteConfigs: [[url: 'https://github.com/MADHAVAN-BE-2003/Maven_Project_1.git']],
+                        userRemoteConfigs: [[url: 'https://github.com/MADHAVAN-BE-2003/Maven_Project_Test.git']],
                         extensions: [[$class: 'CleanBeforeCheckout']]
                     ])
                     echo 'Code checkout successful.'
